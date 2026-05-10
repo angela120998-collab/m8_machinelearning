@@ -1,0 +1,17 @@
+Columna,Tipo,Descripción,% Nulos,Cardinalidad,Ejemplo
+MES,int64,Mes de observación (YYYYMM),0.0%,3,201402
+CLIENTE,str,Identificador único del cliente (ID),0.0%,8458,C00001
+NRO_VEC_COB,str,Nº de veces que cayó en cobranzas (binned),24.6%,2,<=10
+PDPs_ROTAS,str,Nº promesas de pago incumplidas (binaria),0.0%,2,0
+ESTADO_PDP,int64,"Estado de promesa de pago (0=sin promesa, 1=temprana)",0.0%,2,0
+NRO_CUOTAS,str,Número de cuotas adeudadas (binned),8.0%,3,"<24, 48]"
+MES_0,float64,Deuda vencida mes actual (S/.),0.0%,6382,244.86
+MES_1,float64,Deuda vencida mes anterior (S/.),0.0%,3520,0.0
+MES_2,float64,Deuda vencida hace 2 meses (S/.),10.7%,2209,245.26
+FECHALLAMADA,str,Fecha de gestión del lead (DD/MM/YYYY),0.0%,61,03/02/2014
+HORA,float64,Hora de la gestión (entero),0.0%,14,15.0
+DEUDA_TOTAL,float64,Deuda total al cierre de mes (S/.),0.0%,6590,3816.34
+ESTATUS,str,Estado del titular (constante = BT),0.0%,1,BT
+ACTIVACION,float64,Año de activación como cliente,0.0%,5,2012.0
+MORA,float64,"Estado de mora (0=Deficiente, 1=Normal)",0.0%,2,1.0
+TIPOCONTACTO,str,"Target: COEF=Efectivo, CNE=No efectivo",0.0%,2,COEF

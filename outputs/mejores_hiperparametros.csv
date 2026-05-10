@@ -1,0 +1,4 @@
+Modelo,clf__C,clf__penalty,CV ROC-AUC,n_estimators,min_samples_split,min_samples_leaf,max_features,max_depth,subsample,reg_lambda,reg_alpha,min_child_weight,learning_rate,gamma,colsample_bytree
+Logistic Regression,1.0,l1,0.6495,,,,,,,,,,,,
+Random Forest,,,0.6539,200.0,5.0,1.0,log2,10.0,,,,,,,
+XGBoost,,,0.657,200.0,,,,5.0,0.7,5.0,0.1,5.0,0.01,0.0,0.7

@@ -1,0 +1,71 @@
+{
+  "best_model_name": "XGBoost",
+  "cv_scores": {
+    "Logistic Regression": 0.6495,
+    "Random Forest": 0.6539,
+    "XGBoost": 0.657
+  },
+  "test_metrics_path": "/Users/albertbry/Documents/TfMlAngela/outputs/metricas_test.csv",
+  "best_params": {
+    "lr": {
+      "clf__C": 1,
+      "clf__penalty": "l1"
+    },
+    "rf": {
+      "n_estimators": 200,
+      "min_samples_split": 5,
+      "min_samples_leaf": 1,
+      "max_features": "log2",
+      "max_depth": 10
+    },
+    "xgb": {
+      "subsample": 0.7,
+      "reg_lambda": 5,
+      "reg_alpha": 0.1,
+      "n_estimators": 200,
+      "min_child_weight": 5,
+      "max_depth": 5,
+      "learning_rate": 0.01,
+      "gamma": 0,
+      "colsample_bytree": 0.7
+    }
+  },
+  "thresholds": {
+    "Logistic Regression": 0.4539,
+    "Random Forest": 0.5013,
+    "XGBoost": 0.510699987411499
+  },
+  "train_shape": [
+    5754,
+    25
+  ],
+  "test_shape": [
+    2704,
+    25
+  ],
+  "scale_pos_weight": 2.38,
+  "figs": {
+    "01_target_dist": "/Users/albertbry/Documents/TfMlAngela/figs/01_target_dist.png",
+    "02_hist_numericas": "/Users/albertbry/Documents/TfMlAngela/figs/02_hist_numericas.png",
+    "03_box_target": "/Users/albertbry/Documents/TfMlAngela/figs/03_box_target.png",
+    "04_cat_target": "/Users/albertbry/Documents/TfMlAngela/figs/04_cat_target.png",
+    "05_temporal": "/Users/albertbry/Documents/TfMlAngela/figs/05_temporal.png",
+    "06_corr": "/Users/albertbry/Documents/TfMlAngela/figs/06_corr.png",
+    "08_mutual_info": "/Users/albertbry/Documents/TfMlAngela/figs/08_mutual_info.png",
+    "09_cv_compare": "/Users/albertbry/Documents/TfMlAngela/figs/09_cv_compare.png",
+    "11_confusion": "/Users/albertbry/Documents/TfMlAngela/figs/11_confusion.png",
+    "13_roc_pr_test": "/Users/albertbry/Documents/TfMlAngela/figs/13_roc_pr_test.png",
+    "14_feature_importance": "/Users/albertbry/Documents/TfMlAngela/figs/14_feature_importance.png",
+    "15_lift": "/Users/albertbry/Documents/TfMlAngela/figs/15_lift.png",
+    "16_calibration": "/Users/albertbry/Documents/TfMlAngela/figs/16_calibration.png"
+  },
+  "outputs": {
+    "diccionario_datos": "/Users/albertbry/Documents/TfMlAngela/outputs/diccionario_datos.csv",
+    "metricas_test": "/Users/albertbry/Documents/TfMlAngela/outputs/metricas_test.csv",
+    "cv_comparison": "/Users/albertbry/Documents/TfMlAngela/outputs/cv_comparison.csv",
+    "mutual_info": "/Users/albertbry/Documents/TfMlAngela/outputs/mutual_info.csv",
+    "mejores_hiperparametros": "/Users/albertbry/Documents/TfMlAngela/outputs/mejores_hiperparametros.csv",
+    "tasa_coef": "/Users/albertbry/Documents/TfMlAngela/outputs/tasa_coef_por_categoria.csv",
+    "mannwhitney": "/Users/albertbry/Documents/TfMlAngela/outputs/test_mannwhitney.csv"
+  }
+}
